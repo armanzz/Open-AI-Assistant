@@ -9,12 +9,12 @@ import wikipediaapi
 
 
 # Set up your OpenAI API key
-openai.api_key='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'
+openai.api_key='your api key'
 
 class wikipedia:
     @staticmethod
     def run():
-        wiki_wiki = wikipediaapi.Wikipedia('MyProjectName (armansingh1132@gmail.com)', 'en')
+        wiki_wiki = wikipediaapi.Wikipedia('MyProjectName (youremail@example.com)', 'en')
 
         page_py = wiki_wiki.page('Python_(programming_language)')
        
@@ -56,7 +56,7 @@ class FileManagementTool:
 class SerpAPIWrapper:
     @staticmethod
     def run(query, api_key):
-        serpapi_endpoint = 'https://serpapi.com/search.json?engine=google&q=currentevents'
+        serpapi_endpoint = 'your serpapi endpoint'
         params = {
             'q': query,
             'key': api_key,
@@ -86,7 +86,7 @@ class SerpAPIWrapper:
 
 file_tool = FileManagementTool()
 # add your serpapi key here
-serp_api_key = '1508c9070eceea9e3b331a2a2c2b08fc010725ba62bdb10be57ce660791aa222'
+serp_api_key = 'your api key'
 
 # Perform a search using SerpAPI
 search_result = SerpAPIWrapper.run("current events", serp_api_key)
@@ -100,7 +100,7 @@ print(content)
 
     #add your openai api key
 # Initialize the client
-client = openai.OpenAI(api_key='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')
+client = openai.OpenAI(api_key='tour api key')
 
 # Step 1: Create an Assistant
 assistant = client.beta.assistants.create(
